@@ -1,5 +1,5 @@
 //page.js 를 감싸는 파일 include 파일들
-
+import Link from "next/link"
 import './globals.css'
 
 export const metadata = {
@@ -10,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <div className="navbar">
+        <Link href="/">홈</Link>
+        <Link href="/list">List</Link>
+      </div>
+      {children}
     </html>
   )
 }
