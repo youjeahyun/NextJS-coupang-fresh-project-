@@ -1,3 +1,5 @@
+//page.js 를 감싸는 파일 include 파일들
+
 import './globals.css'
 
 export const metadata = {
